@@ -28,9 +28,11 @@ class _QRViewExampleState extends State<QRViewExample> {
     super.reassemble();
 
     if (Platform.isAndroid) {
-      controller!.pauseCamera();
+      controller!.resumeCamera();
+      //controller!.pauseCamera();
     }
-    controller!.resumeCamera();
+    //controller!.resumeCamera();
+    controller!.pauseCamera();
   }
 
   @override

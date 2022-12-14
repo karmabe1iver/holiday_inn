@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:holiday_inn/screens/denied/denied.dart';
 import 'package:holiday_inn/screens/guest%20details/guest_details.dart';
+import 'package:holiday_inn/screens/scan/scan_page.dart';
 import 'package:holiday_inn/screens/splash%20screen/splash_screen.dart';
 import 'package:holiday_inn/screens/sucess/sucess_screen.dart';
 
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         'guest detail':(context)=>GuestDetails(),
         //'denied':(context)=>Denied(res),
         'sucess':(context)=>SucessScreen(),
+        'scan':(context)=>ScanPage(),
       },
     );
   }
