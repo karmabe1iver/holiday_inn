@@ -3,6 +3,8 @@ import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:holiday_inn/screens/guest%20details/guest_details.dart';
+import 'package:holiday_inn/screens/guest%20details/guest_form.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
 class QRViewExample extends StatefulWidget {
@@ -166,15 +168,15 @@ class _QRViewExampleState extends State<QRViewExample> {
     controller.scannedDataStream.listen((scanData) {
       setState(() {
         result = scanData;
-        // Navigator.push(
-        //   context,
-        //   MaterialPageRoute(
-        //     builder: (context) => (
-        //       result: result,
-        //     ), //ResultScreen(
-        //     //result: result,
-        //   ),
-        //);
+         Navigator.push(
+          context,
+           MaterialPageRoute(
+             builder: (context) => GuestDetails(
+              result: result,
+            ), //ResultScreen(
+             //result: result,
+          ),
+        );
       });
     });
   }

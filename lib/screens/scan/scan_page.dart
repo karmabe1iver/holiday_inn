@@ -16,7 +16,6 @@ class ScanPage extends StatelessWidget {
           Container(
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height * .5,
-            // color: Color.fromRGBO(80, 158, 47, 1),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(30),
