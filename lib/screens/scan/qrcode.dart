@@ -18,8 +18,7 @@ class _QRViewExampleState extends State<QRViewExample> {
 
   final GlobalKey qrKey = GlobalKey(debugLabel: 'QR');
 
-  get _green =>  Color.fromRGBO(80, 158, 47, 1);
-
+  get _green => Color.fromRGBO(80, 158, 47, 1);
 
   // In order to get hot reload to work we need to pause the camera if the platform
   // is android, or resume the camera if the platform is iOS.
@@ -44,7 +43,6 @@ class _QRViewExampleState extends State<QRViewExample> {
           Expanded(
             flex: 1,
             child: FittedBox(
-
               fit: BoxFit.contain,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -143,13 +141,12 @@ class _QRViewExampleState extends State<QRViewExample> {
   }
 
   Widget _buildQrView(BuildContext context) {
-    // For this example we check how width or tall the device is and change the scanArea and overlay accordingly.
+
     var scanArea = (MediaQuery.of(context).size.width < 400 ||
             MediaQuery.of(context).size.height < 400)
         ? 150.0
         : 300.0;
-    // To ensure the Scanner view is properly sizes after rotation
-    // we need to listen for Flutter SizeChanged notification and update controller
+
     return QRView(
       key: qrKey,
       onQRViewCreated: _onQRViewCreated,
@@ -170,13 +167,12 @@ class _QRViewExampleState extends State<QRViewExample> {
     controller.scannedDataStream.listen((scanData) {
       setState(() {
         result = scanData;
-         Navigator.push(
+        Navigator.push(
           context,
-           MaterialPageRoute(
-             builder: (context) => GuestDetails(
+          MaterialPageRoute(
+            builder: (context) => GuestDetails(
               result: result,
-            ), //ResultScreen(
-             //result: result,
+            ),
           ),
         );
       });
