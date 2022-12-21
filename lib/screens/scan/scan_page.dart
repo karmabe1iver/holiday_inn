@@ -1,11 +1,12 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
-import 'package:holiday_inn/screens/scan/qrcode.dart';
+
+import 'package:holidayinn/screens/scan/qrcode.dart';
 
 class ScanPage extends StatelessWidget {
   const ScanPage({Key? key}) : super(key: key);
 
-  get _green => Color.fromRGBO(80, 158, 47, 1);
+  get _green =>const Color.fromRGBO(80, 158, 47, 1);
 
   @override
   Widget build(BuildContext context) {
@@ -15,13 +16,15 @@ class ScanPage extends StatelessWidget {
       },
       child: Scaffold(
         body: Column(
+
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+
             Container(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height * .5,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
+                  borderRadius:const BorderRadius.only(
                       bottomLeft: Radius.circular(30),
                       bottomRight: Radius.circular(30)),
                   color: _green),
@@ -30,7 +33,7 @@ class ScanPage extends StatelessWidget {
                 children: [
                   Positioned(
                     bottom: 25,
-                    child: Container(
+                    child: SizedBox(
                         width: MediaQuery.of(context).size.width * 1,
                         child: Image.asset(
                           'asset/image/office.png',
@@ -46,7 +49,7 @@ class ScanPage extends StatelessWidget {
             ),
             Column(
               children: [
-                Text(
+               const Text(
                   "Welcome To",
                   style: TextStyle(
                     fontSize: 20,
@@ -72,9 +75,11 @@ class ScanPage extends StatelessWidget {
                 ),
                 onPressed: () {
                   Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) => QRViewExample()));
+                      MaterialPageRoute(builder: (context) => QrCodeScanner()));
+
+
                 },
-                child: Container(
+                child: SizedBox(
                   height: MediaQuery.of(context).size.height * .07,
                   width: MediaQuery.of(context).size.width * .5,
                   child: Row(
@@ -84,7 +89,7 @@ class ScanPage extends StatelessWidget {
                         'asset/image/iconidentificationbadge.png',
                         scale: 1,
                       ),
-                      Text(
+                     const Text(
                         ' Scan Your ID',
                         style: TextStyle(
                             fontFamily: 'Poppins',
@@ -96,7 +101,7 @@ class ScanPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+           const SizedBox(
               height: 150,
             ),
           ],

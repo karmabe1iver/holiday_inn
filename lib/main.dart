@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:holiday_inn/screens/denied/denied.dart';
-import 'package:holiday_inn/screens/guest%20details/guest_details.dart';
-import 'package:holiday_inn/screens/scan/scan_page.dart';
-import 'package:holiday_inn/screens/splash%20screen/splash_screen.dart';
-import 'package:holiday_inn/screens/sucess/sucess_screen.dart';
+import 'package:holidayinn/screens/guest%20details/guest_details.dart';
+import 'package:holidayinn/screens/scan/scan_page.dart';
+import 'package:holidayinn/screens/splash%20screen/splash_screen.dart';
+import 'package:holidayinn/screens/sucess/sucess_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

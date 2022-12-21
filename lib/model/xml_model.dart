@@ -8,18 +8,18 @@ import 'package:xml/xml.dart';
 
 
 var sample ;
-
-//'''
-//<?xml version="1.0" encoding="UTF-8"?>
-//<PrintLetterBarcodeData uid="468308090468" name="Joya Kuriakose" gender="F" yob="1995" co="D/O: Kuriakose K P"
-//house="Keerankuzhy House"
-//street="Puthenpally"
-//loc="Vembilly P O"
-//vtc="Kunnathunad"
-//dist="Ernakulam"
-//state="Kerala"
-//pc="683565"/>
-//''';
+dynamic sample1=
+'''
+<?xml version="1.0" encoding="UTF-8"?>
+<PrintLetterBarcodeData uid="468308090468" name="Joya Kuriakose" gender="F" yob="1995" co="D/O: Kuriakose K P"
+house="Keerankuzhy House"
+street="Puthenpally"
+loc="Vembilly P O"
+vtc="Kunnathunad"
+dist="Ernakulam"
+state="Kerala"
+pc="683565"/>
+''';
 
 
 

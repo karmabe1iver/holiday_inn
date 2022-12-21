@@ -1,7 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:holiday_inn/screens/scan/scan_page.dart';
+
+
+import '../scan/scan_page.dart';
 
 class SplashScreen1 extends StatefulWidget {
   const SplashScreen1({

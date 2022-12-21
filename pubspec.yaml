@@ -1,4 +1,4 @@
-name: holiday_inn
+name: holidayinn
 description: Aadhar Scanner Appliction For entry verifcation
 
 # The following line prevents the package from being accidentally published to
@@ -30,7 +30,9 @@ dependencies:
   flutter:
     sdk: flutter
   qr_code_scanner: ^1.0.1
-  xml:
+  xml: ^6.1.0
+  xml_parser: ^1.0.0
+
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -38,8 +40,12 @@ dependencies:
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
+  flutter_launcher_icons: ^0.11.0
   flutter_test:
     sdk: flutter
+
+
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -48,11 +54,13 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
 
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
