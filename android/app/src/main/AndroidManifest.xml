@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.taurus.holiday_inn">
    <application
-        android:label="holidayinn"
+        android:label="HolidayInn"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
